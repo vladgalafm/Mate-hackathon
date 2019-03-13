@@ -24,7 +24,7 @@ const AboutUs = () => {
                 nulla nisl, aliquam pretium ipsum. Pellentesque sodales ipsum et
                 enim rutrum adipiscing. Quisque tincidunt mattis sapien,
                 vel posuere.</p>
-              <NavLink className="about-us__learn-more" to="/learn-more">Learn more</NavLink>
+              <NavLink className="about-us__learn-more" to={process.env.PUBLIC_URL + '/learn-more'}>Learn more</NavLink>
             </div>
           </div>
         </div>

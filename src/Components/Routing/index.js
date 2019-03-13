@@ -17,15 +17,15 @@ class Routing extends React.Component {
     return (
       <main>
         <Switch>
-          <Route exact path="/" component={HomePage}/>
-          <Route path="/about" component={AboutUs}/>
-          <Route path="/team" component={OurTeam}/>
-          <Route path="/services" component={OurSkills}/>
-          <Route path="/portfolio" component={PortfolioPage}/>
-          <Route path="/blog" component={BlogPage}/>
-          <Route path="/contact" component={ContactPage}/>
-          <Route path="/404" component={Page404}/>
-          <Redirect to="/404"/>
+          <Route exact path={process.env.PUBLIC_URL + '/'} component={HomePage}/>
+          <Route path={process.env.PUBLIC_URL + '/about'} component={AboutUs}/>
+          <Route path={process.env.PUBLIC_URL + '/team'} component={OurTeam}/>
+          <Route path={process.env.PUBLIC_URL + '/services'} component={OurSkills}/>
+          <Route path={process.env.PUBLIC_URL + '/portfolio'} component={PortfolioPage}/>
+          <Route path={process.env.PUBLIC_URL + '/blog'} component={BlogPage}/>
+          <Route path={process.env.PUBLIC_URL + '/contact'} component={ContactPage}/>
+          <Route path={process.env.PUBLIC_URL + '/404'} component={Page404}/>
+          <Redirect to={process.env.PUBLIC_URL + '/404'}/>
         </Switch>
       </main>
     );

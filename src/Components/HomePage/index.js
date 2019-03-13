@@ -25,27 +25,27 @@ class HomePage extends React.Component {
               sulem
               lorem do burta</p>
             <div className="home__icon-box">
-              <Link to="/about" className="home__icon">
+              <Link to={process.env.PUBLIC_URL + '/about'} className="home__icon">
                 <img className="icon__item" src={settings} alt="icon"/>
                 <p className="home__icon-text">About</p>
               </Link>
-              <Link to="/team" className="home__icon">
+              <Link to={process.env.PUBLIC_URL + '/team'} className="home__icon">
                 <img className="icon__item" src={user} alt="icon"/>
                 <p className="home__icon-text">Team</p>
               </Link>
-              <Link to="/services" className="home__icon">
+              <Link to={process.env.PUBLIC_URL + '/services'} className="home__icon">
                 <img className="icon__item" src={bubble} alt="icon"/>
                 <p className="home__icon-text">Services</p>
               </Link>
-              <Link to="/portfolio" className="home__icon">
+              <Link to={process.env.PUBLIC_URL + '/portfolio'} className="home__icon">
                 <img className="icon__item" src={photo} alt="icon"/>
                 <p className="home__icon-text">Portfolio</p>
               </Link>
-              <Link to="/blog" className="home__icon">
+              <Link to={process.env.PUBLIC_URL + '/blog'} className="home__icon">
                 <img className="icon__item" src={pen} alt="icon"/>
                 <p className="home__icon-text">Blog</p>
               </Link>
-              <Link to="/contact" className="home__icon">
+              <Link to={process.env.PUBLIC_URL + '/contact'} className="home__icon">
                 <img className="icon__item" src={paperplane} alt="icon"/>
                 <p className="home__icon-text">Contact</p>
               </Link>
